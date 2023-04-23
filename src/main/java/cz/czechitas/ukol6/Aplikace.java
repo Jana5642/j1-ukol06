@@ -43,7 +43,6 @@ public class Aplikace extends JFrame {
         setLayout(new MigLayout("wrap 2", "[right]rel[50:120:150,grow,fill]"));
         setMinimumSize(new Dimension(250, 200));
 
-
         husyField = new JTextField();
         husyLabel = new JLabel("Husy");
         husyLabel.setEnabled(true);
@@ -80,8 +79,6 @@ public class Aplikace extends JFrame {
         add(pocetNohouLabel);
         add(pocetNohouField);
 
-
-
         pack();
 
         getRootPane().setDefaultButton(vypocitatButton);
@@ -92,7 +89,6 @@ public class Aplikace extends JFrame {
         vypocitatButton = new JButton("Vypočítat");
         vypocitatButton.setMnemonic('V');
 
-
         JPanel buttonBar = new JPanel(new MigLayout(null, "[right, grow]"));
 
         buttonBar.add(vypocitatButton);
@@ -101,8 +97,6 @@ public class Aplikace extends JFrame {
 }
 
     private void handlevypocitat(ActionEvent actionEvent) {
-
-
 
         int husy = Integer.parseInt(husyField.getText());
         int kralici= Integer.parseInt(kraliciField.getText());

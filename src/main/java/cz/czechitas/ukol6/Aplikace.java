@@ -113,8 +113,10 @@ public class Aplikace extends JFrame {
         System.out.printf("Husy: %s", husyField.getText()).println();
         System.out.printf("Králíci: %s", kraliciField.getText()).println();
 
-        System.out.printf("Počet hlav: %s", pocetHlavField.setText(pocetHlav)).println;
-        System.out.printf("počet nohou: %s", pocetNohouField.setText(pocetNohou)).println();
+        pocetHlavField.setText(Integer.toString(pocetHlav));
+        pocetNohouField.setText(Integer.toString(pocetNohou));
+        System.out.printf("Počet hlav: %s", pocetHlav);
+        System.out.printf("počet nohou: %s",pocetNohou);
 
 
 
